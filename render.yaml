@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-film-studio-ep2-preview
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ENABLE_PAID_GENERATION
+        value: "false"
